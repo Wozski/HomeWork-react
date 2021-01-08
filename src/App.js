@@ -23,7 +23,7 @@ const Box = styled.div`
 function App() {
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(null);
   const cors = "https://cors-anywhere.herokuapp.com/";
   const url =
     "https://gis.taiwan.net.tw/XMLReleaseALL_public/scenic_spot_C_f.json";
@@ -48,32 +48,46 @@ function App() {
         }
       );
   }, []);
-  const datas = items.XML_Head.Infos.Info;
   if (error) {
     return <div>Error: {error.message}</div>;
   } else if (!isLoaded) {
     return <div>Loading...</div>;
   } else {
-    return (
-      <Container>
-        <Title>
-          <Box>地區</Box>
-          <Box>鄉鎮</Box>
-          <Box>公司名稱</Box>
-          <Box>地址</Box>
-          <Box>電話</Box>
-        </Title>
-        {datas.map((data) => (
-          <Empty>
-            <Box>{data.Region}</Box>
-            <Box>{data.Town}</Box>
-            <Box>{data.Name}</Box>
-            <Box>{data.Add}</Box>
-            <Box>{data.Tel}</Box>
-          </Empty>
-        ))}
-      </Container>
-    );
+    if (items !== null) {
+      const datas = items.XML_Head.Infos.Info;
+      return (
+        <Container>
+          <Title>
+            <Box>地區</Box>
+            <Box>鄉鎮</Box>
+            <Box>公司名稱</Box>
+            <Box>地址</Box>
+            <Box>電話</Box>
+          </Title>
+          {datas.map((data) => (
+            <Empty>
+              <Box>{data.Region}</Box>
+              <Box>{data.Town}</Box>
+              <Box>{data.Name}</Box>
+              <Box>{data.Add}</Box>
+              <Box>{data.Tel}</Box>
+            </Empty>
+          ))}
+        </Container>
+      );
+    } else {
+      return (
+        <Container>
+          <Title>
+            <Box>地區</Box>
+            <Box>鄉鎮</Box>
+            <Box>公司名稱</Box>
+            <Box>地址</Box>
+            <Box>電話</Box>
+          </Title>
+        </Container>
+      );
+    }
   }
 }
 
