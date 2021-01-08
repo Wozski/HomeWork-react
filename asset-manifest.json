@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Wozski/HomeWork-react/static/css/main.a838c02b.chunk.css",
+    "main.js": "/Wozski/HomeWork-react/static/js/main.d7a65d63.chunk.js",
+    "main.js.map": "/Wozski/HomeWork-react/static/js/main.d7a65d63.chunk.js.map",
+    "runtime-main.js": "/Wozski/HomeWork-react/static/js/runtime-main.f7e0a9f9.js",
+    "runtime-main.js.map": "/Wozski/HomeWork-react/static/js/runtime-main.f7e0a9f9.js.map",
+    "static/js/2.308ae8a5.chunk.js": "/Wozski/HomeWork-react/static/js/2.308ae8a5.chunk.js",
+    "static/js/2.308ae8a5.chunk.js.map": "/Wozski/HomeWork-react/static/js/2.308ae8a5.chunk.js.map",
+    "static/js/3.88b27f1f.chunk.js": "/Wozski/HomeWork-react/static/js/3.88b27f1f.chunk.js",
+    "static/js/3.88b27f1f.chunk.js.map": "/Wozski/HomeWork-react/static/js/3.88b27f1f.chunk.js.map",
+    "index.html": "/Wozski/HomeWork-react/index.html",
+    "static/css/main.a838c02b.chunk.css.map": "/Wozski/HomeWork-react/static/css/main.a838c02b.chunk.css.map",
+    "static/js/2.308ae8a5.chunk.js.LICENSE.txt": "/Wozski/HomeWork-react/static/js/2.308ae8a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7e0a9f9.js",
+    "static/js/2.308ae8a5.chunk.js",
+    "static/css/main.a838c02b.chunk.css",
+    "static/js/main.d7a65d63.chunk.js"
+  ]
+}
